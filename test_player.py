@@ -10,14 +10,14 @@ class TestPlayer:
         """
         # Arrange
         player = Player(name="destroyer", level=50)
-        spells = [Spell(code=1), Spell(code=2), Spell(code=3)]
+        spell = Spell(code=1)
 
-        # Act / Assert
-        for order, spell in enumerate(spells):
-            result = player.equip_spell(spell)
+        # Act
+        result = player.equip_spell(spell)
 
-            assert result is True
-            assert len(player.spells) == order + 1
+        # Assert
+        assert result is True
+        assert len(player.spells) == 1
 
     def test_equip_spell_error_player_level_below_50(self):
         """

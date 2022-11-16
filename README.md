@@ -11,4 +11,7 @@ source unit_test_venv/bin/activate
 pip install -r requirements_dev.txt
 ```
 
-
+O jogador podera equipar magias em seu personagem. 
+Cada Jogadores só poderão equipar magias com seu personagem acima do nível 50. 
+O jogador poderá equipar o número máximo de 3 magias
+ele não pode equipar a mesma magia mais de uma vez.
