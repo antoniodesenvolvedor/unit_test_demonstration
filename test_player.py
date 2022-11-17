@@ -4,8 +4,8 @@ from player import Player, Spell
 class TestPlayer:
     def test_equip_spell_success(self):
         """
-        Dado um jogador com nível acima de 50 e menos de 3 magias já equipadas e uma magia com nível abaixo de 10
-        Quando o jogador tentar equipar uma nova magina
+        Dado um jogador com nível acima de 50 e menos de 3 magias já equipadas
+        Quando o jogador tentar equipar uma nova magina que já não foi equipada
         Então ela deve ser equipada com sucesso
         """
         # Arrange
